@@ -2,13 +2,18 @@
   "name": "express-typescript-template",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec \"npx tsx src/server.ts \"  ",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "type": "module",
   "overrides": {
     "eslint": "^9.8.0"
   },
