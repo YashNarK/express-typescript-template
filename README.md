@@ -335,7 +335,7 @@ app.listen(PORT, () => {
   node dist/server.js
   ```
 
-- **`dev`**: Uses `nodemon` to automatically restart the server when changes are detected in your TypeScript files. This script is for development.
+- **`dev`**: This command runs `src/server.ts` with `tsx` (TypeScript executor) using `nodemon` to automatically restart the server on code changes.
 
   ```bash
   nodemon --exec "npx tsx src/server.ts"
